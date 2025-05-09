@@ -1,0 +1,51 @@
+/* ========== ANIMAÇÕES ========== */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Animações */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  /* Aplica animações nas descrições */
+  .descricao-produtos{
+    animation: slideInLeft 1.2s ease-in-out;
+  }
+  /* Aplica animações nas imagens */
+  .image-produto {
+    animation: slideInRight 1.2s ease-in-out;
+  }
+  /* ========== ANIMAÇÕES ========== */

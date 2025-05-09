@@ -1,0 +1,83 @@
+@import url(root.css);
+:root{
+    --corheader:#126355e7;
+    --corheaderdegrade:#00241F;
+    --corbody: #da8c906b;
+    --corfonte2:rgb(230, 202, 134);
+    --fontfamilytitulos:Dancing Script;
+    --fontfamilyparagrafo:Montserrat;
+    --corestrelas: rgb(237, 186, 10);
+    --corbacktitulos:#ffe9ec;
+    --corbacktituloshadow:#d3c0c2d7;
+    --corfonte1:black;
+    --border-radiusparag:0em 0.6em;
+    --border-radiusimg: 0.4em;
+    --shadow: 0 5px 5px #d3c0c2d7;
+    --shadow-imagem:0 5px 5px rgba(0,0,0,0.2);
+    
+  }
+  /* ========== FOOTER ========== */
+
+  .footer-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    padding: 0.2em;
+    max-width: 1200px;
+    max-height: 100%;
+  }
+  .footer-coluna {
+    flex: 1 1 100px;
+    margin: 1em;
+  }
+  .footer-coluna h3{
+    text-align: center;
+  }
+  .footer-coluna >p{
+    text-align: center;
+   }
+  .footer-coluna .nome-marca{
+    font-family: var(--fontfamilytitulos);
+    font-size: 1.8em;
+    margin: auto;
+  }
+  .footer-coluna h3,
+  .footer-coluna h4 {
+    margin-bottom: 0.5em;
+    font-family: var(--fontfamilyparagrafo);
+  }
+  
+  .footer-coluna ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-coluna ul li {
+    margin-bottom: 0.5em;
+  }
+
+  .footer-coluna ul li a {
+    text-decoration: none;
+    color: rgb(245, 210, 128);
+    transition: color 0.3s;
+  }
+  
+  .footer-coluna ul li a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  footer .Whatsapp{
+    text-align: end;
+    width: 11%;
+    height: 100%;
+  }
+  .footer-direitos {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 0.9em;
+    color: #e0c08e;
+    height: 100%;
+  }
+
+  /* ==========FINAL FOOTER ========== */
