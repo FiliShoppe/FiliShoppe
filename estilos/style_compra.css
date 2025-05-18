@@ -17,7 +17,10 @@ html, body {
     line-height: 1.6;
     scroll-behavior: smooth;
 }
-
+.content{
+    max-width: 1200px;
+    margin: auto;
+}
 /* Container */
 .container {
     max-width: 100%;
