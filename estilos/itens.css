@@ -1,0 +1,104 @@
+:root {
+    --corheader: #126355e7;
+    --corheaderdegrade: #00241F;
+    --corbody: #da8c906b;
+    --corfonte2: rgb(230, 202, 134);
+    --fontfamilytitulos: Dancing Script;
+    --fontfamilyparagrafo: Montserrat;
+    --corestrelas: rgb(237, 186, 10);
+    --corbacktitulos: #ffe9ec;
+    --corbacktituloshadow: #d3c0c2d7;
+    --corfonte1: black;
+    --border-radiusparag: 0em 0.6em;
+    --border-radiusimg: 0.4em;
+    --shadow: 0 5px 5px #d3c0c2d7;
+    --shadow-imagem: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.itens {
+    margin: auto;
+    max-width: 1200px;
+
+}
+.ficha {
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.4em;
+    font-weight: bolder;
+    border-radius: 10px;
+    margin-bottom: 0.2em;
+    transition: background-color 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.ficha:hover {
+    background-color: #fbcdd2;
+}
+.painel {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    padding: 0em 0.9em 0em 15px;
+    margin-bottom: 0.5em;
+    max-height: 0;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.painel b {
+    font-family: var(--fontfamilyparagrafo);
+    font-size: 1em;
+    font-weight: 490;
+    color: var(--corfonte1);
+}
+.painel ul {
+    background-color: var(--corbacktitulos);
+    padding: 1em 1em 1em 1.4em;
+    border-radius: 0 0 10px 10px;
+}
+
+.painel ul>li {
+    color: #AA5151;
+    font-size: 1.1em;
+    font-family: var(--fontfamilyparagrafo);
+}
+
+/* ========== CARACTERISTICAS ========== */
+.caracteristicas {
+    text-align: center;
+    max-width: 1200px;
+    max-height: 100%;
+    background-color: #fff4f4;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    margin: 2.5em auto 0 auto;
+}
+
+.caracteristicas>h1 {
+    font-size: 2.6em;
+    font-family: var(--fontfamilytitulos);
+    padding-bottom: 0.5em;
+}
+
+.imagem-caracteristicas {
+    max-width: 1200px;
+    max-height: 100%;
+}
+
+.caracteristicas img {
+    width: 95%;
+    height: 100%;
+    box-shadow: 1px 2px 1px rgba(247, 222, 222, 0.993);
+}
+.caracteristicas img:hover{
+    transition: 1.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+/* ========== FINAL CARACTERISTICAS ========== */
