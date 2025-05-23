@@ -272,32 +272,6 @@ p {
 }
 
 /* Área de cupom */
-.cupom-area {
-    display: flex;
-    margin: 15px 0;
-    gap: 10px;
-}
-
-.cupom-input {
-    flex: 1;
-    padding: 12px;
-    border: 2px dashed #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-    text-align: center;
-    background-color: white;
-}
-
-.validar-btn {
-    padding: 12px 15px;
-    background-color: #555;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-}
 
 /* Destaque e engajamento */
 .engajamento {
