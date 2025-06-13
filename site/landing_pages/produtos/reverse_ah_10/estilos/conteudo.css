@@ -1,0 +1,104 @@
+@import url(root.css);
+  /* ========== PRODUTOS ========== */
+.conteudo-principal{
+    color: var(--corfonte1);
+    font-family: var(--fontfamilyparagrafo);
+    font-size: 1.2em;
+    color: var(--corfonte1);
+    max-width: 1200px;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    padding-top:1.4em;
+}
+.produto1,.produto2,.produto3,.produto4{
+  display: flex;
+  margin: auto;
+  width: 100%;
+  padding: 0px;
+  height: 100%;
+}
+h3{
+    text-align: center;
+    font-size: 1.5em;
+}
+.descricao-produtos{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--corbacktitulos);
+    border-radius: var(--border-radiusparag);
+    box-shadow: var(--shadow);
+    padding: 1em;
+    margin-left: 10%;
+    text-align: justify;
+}
+.descricao-produtos h3{
+width: auto;
+height: auto;
+}
+.descricao-produtos p{
+    width: auto;
+    height: fit-content;
+    text-align: justify;
+}
+.descricao-produtos ul{
+    padding-left:1.2em;
+}
+/* ========== FINAL PRODUTO ========== */
+
+/* ========== IMAGE ========== */
+img{
+    max-width:900px;
+    max-height:23em;
+    box-shadow: var(--shadow-imagem);
+    border-radius: var(--border-radiusimg);
+}
+.image-produto{
+    width:fit-content;
+    height:100%;
+    text-align: center;
+}
+.image-produto:hover{
+transform: scale(1.1);
+transition: 1.5s;
+}
+/* ========== FINAL IMAGE ========== */
+
+ /* ========== BOTÕES ========== */
+ .compra{
+    text-align: center;
+    padding-top: 0.3em;
+    padding-bottom: 0.8em;
+    margin-top: 1em;
+  }
+  .btn-compra{
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #f27d8a;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: solid #f27d8a;
+  }
+  .btn-compra>a{
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  .btn-compra>a:hover{
+    text-decoration: none;
+  }
+  .btn-compra:hover{
+    transition: ease 1s;
+    transform: scale(1.3);
+    cursor: pointer;
+    background-color: #d86172;
+    border: solid #d86172;
+  }
+  .btn-compra:focus, .btn-compra:active {
+    outline: 2px dashed #fff;
+    outline-offset: 3px;
+  }
+  /* ========== FINAL BOTÕES ========== */

@@ -1,0 +1,54 @@
+@import url(root.css);
+:root{
+    --corheader:#126355e7;
+    --corheaderdegrade:#00241F;
+    --corbody: #da8c906b;
+    --corfonte2:rgb(230, 202, 134);
+    --fontfamilytitulos:Dancing Script;
+    --fontfamilyparagrafo:Montserrat;
+    --corestrelas: rgb(237, 186, 10);
+    --corbacktitulos:#ffe9ec;
+    --corbacktituloshadow:#d3c0c2d7;
+    --corfonte1:black;
+    --border-radiusparag:0em 0.6em;
+    --border-radiusimg: 0.4em;
+    --shadow: 0 5px 5px #d3c0c2d7;
+    --shadow-imagem:0 5px 5px rgba(0,0,0,0.2);
+    
+  }
+/* ========== REVIEWS ========== */
+.avaliacoes{
+    max-width: 1200px;
+    max-height: 100%;
+    margin:2.5em auto 2.5em auto;
+    padding: 20px;
+    background-color: #fff4f4;
+    border-radius: 20px;
+    box-shadow: var(--shadow-);
+    animation: fadeIn 1.5s ease-in-out;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .avaliacoes h1{
+    font-size: 3em;
+  }
+  .avaliacoes h4 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--fontfamilytitulos);
+  }
+  .avaliacoes p {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.2em;
+  }
+  .avaliacoes .star{
+    color: var(--corestrelas);
+   font-size: 1.6em;
+   text-align: center;
+  }
+
+ /* ========== FINAL REVIEWS ========== */

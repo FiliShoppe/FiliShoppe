@@ -1,0 +1,17 @@
+:root{
+    --corheader:#126355e7;
+    --corheaderdegrade:#00241F;
+    --corbody: #da8c906b;
+    --corfonte2:rgb(230, 202, 134);
+    --fontfamilytitulos:Dancing Script;
+    --fontfamilyparagrafo:Montserrat;
+    --corestrelas: rgb(237, 186, 10);
+    --corbacktitulos:#ffe9ec;
+    --corbacktituloshadow:#d3c0c2d7;
+    --corfonte1:black;
+    --border-radiusparag:0em 0.6em;
+    --border-radiusimg: 0.4em;
+    --shadow: 0 5px 5px #d3c0c2d7;
+    --shadow-imagem:0 5px 5px rgba(0,0,0,0.2);
+    
+  }
