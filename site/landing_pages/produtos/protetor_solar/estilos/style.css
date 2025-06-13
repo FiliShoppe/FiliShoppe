@@ -1,0 +1,62 @@
+@import url(base/footer.css);
+@import url(base/header.css);
+@import url(base/main.css);
+@import url(componentes/acordion.css);
+@import url(componentes/avaliacoes.css);
+@import url(componentes/banner.css);
+@import url(componentes/botoes.css);
+@import url(componentes/produtos.css);
+@import url(responsividade/mediasquery.css);
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+/* Variáveis de cores - Paleta suave para produtos de skincare */
+:root {
+    --cor-primaria: #e5c1cd;      /* Rosa suave */
+    --cor-secundaria: #d4e2d4;    /* Verde menta claro */
+    --cor-terciaria: #f6e6e4;     /* Pêssego clarinho */
+    --cor-accent: #262c4d;       
+    --cor-bannerh1:#2e8ece; 
+    --cor-texto: #4a4a4a;         /* Cinza escuro para texto */
+    --cor-texto-claro: #f8f8f8;   /* Branco suave para texto em fundos escuros */
+    --cor-background: #dce5f1;    /* tom claro de verde pastel, quase esbranquiçado */
+    --cor-botao: #6f99c0;         /* verde médio*/
+    --cor-botao-hover: #ffffff;   /* Lroxo escuro */
+    --cor-sombra: rgba(0, 0, 0, 0.08); /* Sombra suave */
+    --fontprincipal: Montserrat, sans-serif;
+}
+
+body {
+    background-color: var(--cor-background);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    font-family:var(--fontprincipal) ;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: var(--cor-accent);
+    margin-bottom: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

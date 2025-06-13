@@ -1,0 +1,88 @@
+/* Rodapé */
+.big-footer {
+   background-image:linear-gradient(to bottom,#3f7ca4,#43667a 80%);
+    color: white;
+    padding: 3rem 1rem;
+}
+
+.footer-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-coluna {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.footer-coluna h3, .footer-coluna h4 {
+    color: var(--cor-accent);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.footer-coluna p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-coluna ul {
+    list-style: none;
+}
+
+.footer-coluna ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-coluna ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-coluna ul li a:hover {
+    color: var(--cor-accent);
+    text-decoration: underline;
+}
+
+.footer-direitos {
+    width: 100%;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(74, 74, 74, 0.2);
+    padding-top: 1.5rem;
+    text-align: center;
+}
+.footer-direitos p {
+   font-size: 0.9rem;
+}
+.footer-direitos p a{
+text-decoration: none;
+color: rgb(21, 52, 155);
+}
+.footer-direitos .creditos-imagem a{
+    text-decoration: none;
+    color: var(--corfonte1);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .footer-direitos .creditos-imagem a:link,
+.footer-direitos .creditos-imagem a:visited {
+  text-decoration: none;
+  color: white; /* Cor do link */
+  font-size: 0.9rem;
+}
+
+.footer-direitos .creditos-imagem a:hover {
+  text-decoration: underline; /* Ou outra aparência ao passar o mouse */
+  color: lightgoldenrodyellow; /* Por exemplo, uma cor diferente */
+  transition: 0.3s ease;
+}
+
+.footer-direitos .creditos-imagem a:active {
+  color: white; /* Cor para quando o link está sendo clicado */
+  font-weight: bold;
+}
