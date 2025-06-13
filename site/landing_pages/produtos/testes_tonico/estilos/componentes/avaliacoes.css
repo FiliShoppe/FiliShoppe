@@ -1,0 +1,33 @@
+/* Avaliações */
+.avaliacoes {
+    background-color: var(--cor-descricao);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px var(--cor-sombra);
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.avaliacoes h1 {
+    color: var(--cor-bannerh1);
+    margin-bottom: 0.2rem;
+    font-size: 1.8rem;
+}
+
+.star {
+    color: #f8c43a;
+    font-size: 1.9rem;
+}
+
+.avaliacoes h4 {
+    color: var(--cor-texto);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.avaliacoes p {
+    margin-bottom: 2rem;
+    font-style: italic;
+    max-width: 800px;
+    margin: auto;
+}

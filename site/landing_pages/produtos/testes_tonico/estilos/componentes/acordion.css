@@ -1,0 +1,67 @@
+/* Seção de itens/perguntas frequentes */
+.itens {
+    margin: 3rem 0;
+}
+
+.ficha {
+    background-color:var(--cor-botao);
+    color: var(--cor-texto-claro);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    transition: 0.4s;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    position: relative;
+}
+
+.ficha:after {
+    content: '+';
+    font-size: 1.2rem;
+    color: var(--cor-accent);
+    float: right;
+    margin-left: 5px;
+}
+
+.ficha[aria-expanded="true"]:after {
+    content: '-';
+}
+
+.ficha:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+.painel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 1rem;
+}
+
+.painel.active {
+    max-height: 1000px;
+    padding: 18px;
+    border: 1px solid var(--cor-secundaria);
+    border-top: none;
+}
+
+.painel ul {
+    padding-left: 1.5rem;
+}
+
+.painel ul li {
+    margin-bottom: 0.8rem;
+}
+
+.painel ul li b {
+    color: var(--cor-accent);
+}
+

@@ -1,0 +1,107 @@
+/* Resultados Clínicos */
+.clinic-flex {
+    display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;
+}
+.reverse-flex { flex-direction: row;}
+.clinic-text {
+    flex: 1;
+    min-width: 300px;
+}
+.results-list {
+    list-style: none;
+    margin: 30px 0 20px 0;
+    padding: 0;
+}
+.result-num {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #27bfa3;
+    min-width: 60px;
+}
+.result-desc {
+    font-size: 1.08rem;
+    color: #333;
+    vertical-align: middle;
+}
+.clinic-safety {
+    margin: 28px 0 20px 0;
+}
+.clinic-safety h3 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: var(--cor-bannerh1);
+    font-weight: 700;
+}
+.clinic-safety ul {
+    margin: 0 0 0 15px;
+    font-size: 0.98rem;
+    color: #555;
+}
+.clinic-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #17a98b;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.clinic-link:hover {
+    text-decoration: underline;
+    color: #215d57;
+}
+
+/* Modal Clínico */
+.modal-clinic {
+    display: none;
+    position: fixed;
+    z-index: 1002;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.55);
+}
+.modal-content-clinic {
+    background-color: #fff;
+    margin: 40px auto 0 auto;
+    padding: 32px 24px 18px 24px;
+    border-radius: 15px;
+    max-width: 650px;
+    box-shadow: 0 6px 35px 0 rgba(39,191,163,0.2);
+    position: relative;
+    animation: slideDownFade .2s;
+}
+@keyframes slideDownFade {
+    from { transform: translateY(-30px); opacity: 0;}
+    to   { transform: translateY(0);     opacity: 1;}
+}
+.close-modal-clinic {
+    position: absolute;
+    top: 12px; right: 22px;
+    font-size: 2rem; color: #aaa;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.close-modal-clinic:hover { color: #215d57; }
+
+.modal-content-clinic h2 { margin: 0 0 15px 0; font-size: 1.6rem; }
+.modal-content-clinic h3 { color: #27bfa3; margin-top: 22px; font-size:1.12rem;}
+
+.clinic-table {
+    width: 100%; border-collapse: collapse;
+    margin: 18px 0 6px 0;
+    font-size: 0.98rem;
+    background: #fbfcfd;
+}
+.clinic-table th, .clinic-table td {
+    padding: 10px 6px 10px 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+.clinic-table th {
+    background: #27bfa3; color: #fff; font-weight:600; font-size:1rem;
+}
+.clinic-table td { color: #333; }
+.responsive-table { overflow-x:auto; }

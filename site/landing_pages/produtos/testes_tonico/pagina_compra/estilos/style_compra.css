@@ -1,0 +1,419 @@
+/* Imports de fontes e CSS externo */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url(footer.css);
+:root {   
+    --cor-descricao:rgb(248, 237, 241); /* tom claro de rosa pastel */
+    --cor-bannerh1:#ff5c8d;
+    --cor-texto: #4a4a4a;         /* Cinza escuro para texto */
+    --cor-texto-claro: #f8f8f8;   /* Branco suave para texto em fundos escuros */
+    --cor-background: #f1dce1;    /* tom claro de verde pastel, quase esbranquiçado */
+    --cor-botao: #d6557c;       /* verde médio*/
+    --cor-botao-hover: #ff5c8d;   /* Lroxo escuro */
+    --cor-sombra: rgba(0, 0, 0, 0.08); /* Sombra suave */
+    --fontprincipal: Montserrat, sans-serif;
+}
+/* Reset e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    background: linear-gradient(135deg, #f5f7fa, #e5e9f2);
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+.content{
+    max-width: 1200px;
+    margin: auto;
+}
+/* Container */
+.container {
+    max-width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.banner-content h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: var(--cor-bannerh1);
+}
+
+.banner-content p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* Botões genéricos */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--cor-botao);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+/* Títulos e textos */
+h1 {
+    color: #2a7d8e;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+h2 {
+    color: #333;
+    margin: 20px 0 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Descrição e imagem do produto */
+.descricao {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+.image-produto {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0 15px 5%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Benefícios */
+.beneficios {
+    background-color: #f0f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 40%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.beneficios li {
+    list-style: none;
+    margin-bottom: 8px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.beneficios li:before {
+    content: "✓";
+    color: #2a7d8e;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+/* Botões de compra */
+.botoes-compra {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.botao-opcao {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.botao-header {
+    padding: 10px 15px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.ml-header {
+    background-color: #FFE600;
+    color: #333;
+}
+.shopee-header {
+    background-color: #EE4D2D;
+}
+
+.amazon-header {
+    background-color: #232F3E;
+}
+
+.botao-conteudo {
+    padding: 20px;
+}
+
+.ml-conteudo {
+    background: linear-gradient(45deg, #FFFACD, #FFFDE7);
+}
+
+.shopee-conteudo {
+    background: linear-gradient(45deg, #FFEBEE, #FFEDE9);
+}
+
+.amazon-conteudo {
+    background: linear-gradient(45deg, #E3F2FD, #ECEFF1);
+}
+
+/* Estilos do botão comprar */
+.botao-comprar {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.botao-comprar::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255,255,255,0.1);
+    transform: rotate(30deg);
+    animation: shine 3s infinite linear;
+}
+
+.botao-comprar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ml-btn {
+    background-color: #FFE600;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(255, 230, 0, 0.3);
+}
+
+.shopee-btn {
+    background-color: #EE4D2D;
+    box-shadow: 0 4px 15px rgba(238, 77, 45, 0.3);
+}
+
+.amazon-btn {
+    background-color: #FF9900;
+    box-shadow: 0 4px 15px rgba(255, 153, 0, 0.3);
+}
+
+/* Área de cupom */
+/*.cupom-area {
+    display: flex;
+    margin: 15px 0;
+    gap: 10px;
+}
+
+.cupom-input {
+    flex: 1;
+    padding: 12px;
+    border: 2px dashed #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    background-color: white;
+}
+
+.validar-btn {
+    padding: 12px 15px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+*/
+/* Destaque e engajamento */
+.engajamento {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.desconto {
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.promo-tag {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    transform: rotate(15deg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.destaque-compra {
+    padding: 20px;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+    border-radius: 12px;
+    margin: 30px 0;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(255, 94, 98, 0.3);
+}
+
+.destaque-compra h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.destaque-compra p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.contagem {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to top, var(--corheader), var(--corheaderdegrade));
+    color: rgb(245, 210, 128);
+    width: 100%;
+    height: auto;
+}
+
+/* Animações */
+@keyframes shine {
+    0% { transform: translateX(-100%) rotate(30deg); }
+    100% { transform: translateX(100%) rotate(30deg); }
+}
+
+@keyframes pulse {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
+}
+@keyframes pulse-contador {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.85; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.contagem.pulsando {
+    animation: pulse-contador 0.4s ease-in-out;
+}
+.creditos-imagem {
+  font-size: 0.8em;
+  color: #777;
+  text-align: center;
+  margin-top: 20px;
+}
+.creditos-imagem a {
+  color: rgb(230, 202, 134);
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 300px;
+    }
+
+    .banner-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:540px){
+    .descricao{
+        display: block;
+        text-align: center;
+    }
+    .descricao img{
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+    .descricao ul{
+        width: 80%;
+        height: auto;
+    }
+    ul li,.destaque-compra p{
+        font-size: 1.2em;
+    }
+    .content{
+       padding: 20px;
+       text-align: justify;
+    }
+}

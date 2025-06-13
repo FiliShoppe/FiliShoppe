@@ -1,0 +1,25 @@
+/* Botão de compra */
+.compra{
+    margin: auto;
+    text-align: center;
+}
+.btn-compra {
+    background-color: var(--cor-botao);
+    color: var(--cor-texto-claro);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.btn-compra:hover {
+    background-color: var(--cor-botao-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    color: var(--cor-bannerh1);
+}

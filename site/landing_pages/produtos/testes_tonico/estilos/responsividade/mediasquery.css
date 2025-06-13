@@ -1,0 +1,46 @@
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .cabecalho h1 {
+        font-size: 1.8rem;
+    }
+
+    .produto1, .produto2, .produto3, .produto4 {
+        flex-direction: column;
+    }
+
+    .image-produto {
+        order: 1;
+    }
+
+    .descricao-produtos {
+        order: 2;
+    }
+
+    .footer-coluna {
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cabecalho h1 {
+        font-size: 1.5rem;
+    }
+
+    .cabecalho p {
+        font-size: 1rem;
+    }
+
+    .btn-compra {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
+    .descricao-produtos h3 {
+        font-size: 1.3rem;
+    }
+
+    .ficha {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
