@@ -1,0 +1,13 @@
+/* videos.css */
+.video-item video {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  display: block;
+}
+.video-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}

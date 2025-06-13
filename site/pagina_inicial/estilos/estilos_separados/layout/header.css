@@ -1,0 +1,65 @@
+/* header.css */
+header {
+  background-color: var(--light-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  color: rgb(212, 155, 116);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: rgb(212, 155, 116);
+}
+
+.navbar {
+  position: relative;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li {
+  margin-left: 2rem;
+}
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  color: rgb(212, 155, 116);
+  outline: none;
+}
+.nav-links a:focus {
+  outline: 2px solid var(--accent-color);
+}
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: rgb(212, 155, 116);
+  margin: 5px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+}
+.menu-toggle:focus {
+  outline: 2px solid var(--accent-color);
+}
