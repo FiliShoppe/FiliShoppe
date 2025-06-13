@@ -1,0 +1,98 @@
+/* ===============================
+   ESTILOS PARA SEÇÃO DE MÍDIA
+   =============================== */
+/* Estilo para controles de vídeo */
+.media-video::-webkit-media-controls-panel {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.image-slider-section {
+    padding: 40px 0;
+    background-color: #f9f5f0;
+    overflow: hidden;
+}
+
+.slider-container {
+    position: relative;
+    width: auto;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    animation: slideAnimation 20s infinite;
+    gap: 3px;
+}
+
+.slide {
+    width: 6.6%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@keyframes slideAnimation {
+
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+
+    25%,
+    45% {
+        transform: translateX(-20%);
+    }
+
+    50%,
+    70% {
+        transform: translateX(-40%);
+    }
+
+    75%,
+    95% {
+        transform: translateX(-60%);
+    }
+
+    100% {
+        transform: translateX(-80%);
+    }
+}
+
+/* Seção de Vídeos */
+.video-section {
+    padding: 60px 20px;
+    background-image:linear-gradient(to bottom, #f9f5f0 , #fff);
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 75%;
+}
+
+.video-item video {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    height: auto;
+}
+#video4{
+    height: 22rem;
+}

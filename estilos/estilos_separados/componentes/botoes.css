@@ -1,0 +1,26 @@
+/* botoes.css */
+.botao-compra {
+  text-align: center;
+  padding: 1em;
+}
+.add-to-cart {
+  width: 100%;
+  height: auto;
+  padding: 0.7rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color .3s;
+  text-decoration: none;
+  outline: none;
+}
+.add-to-cart:focus {
+  outline: 2px solid var(--accent-color);
+}
+.add-to-cart:hover {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}

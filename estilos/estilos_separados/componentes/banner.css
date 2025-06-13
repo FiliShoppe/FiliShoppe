@@ -1,0 +1,47 @@
+/* banner.css */
+.banner {
+  background-image: url(../../midia/banner/Banner_filishoppe_800px.png);
+  background-size: cover;
+  background-position: top;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--spacing);
+  position: relative;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.2s;
+  z-index: 0;
+  pointer-events: none;
+}
+.banner:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.banner-content {
+  display: block;
+  position: relative;
+  color: rgb(212, 155, 116);
+  transition: transform 0.2s;
+  z-index: 2;
+}
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.banner p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
