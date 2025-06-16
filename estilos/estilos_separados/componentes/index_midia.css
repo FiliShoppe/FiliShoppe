@@ -20,15 +20,15 @@
 
 .slides {
     display: flex;
-    width: 500%;
+    width: 400%;
     height: 100%;
-    transition: transform 0.5s ease-in-out;
-    animation: slideAnimation 20s infinite;
+    animation: slideAnimation 24s infinite;
     gap: 3px;
+    animation-timing-function: ease;
 }
 
 .slide {
-    width: 6.6%;
+    width: 8.33%;
     height: 100%;
 }
 
@@ -40,33 +40,47 @@
 }
 
 @keyframes slideAnimation {
-
-    0%,
-    20% {
+0% {
         transform: translateX(0);
     }
-
-    25%,
+    20% {
+        transform: translateX(0); /* Mantém na posição inicial */
+    }
+   
+    25% {
+        transform: translateX(-25%); /* Chegou ao segundo slide */
+    }
     45% {
-        transform: translateX(-20%);
+        transform: translateX(-25%); /* Mantém no segundo slide */
     }
-
-    50%,
+    50% {
+        transform: translateX(-50%); /* Chegou ao terceiro slide */
+    }
     70% {
-        transform: translateX(-40%);
+        transform: translateX(-50%); /* Mantém no terceiro slide */
     }
-
-    75%,
-    95% {
-        transform: translateX(-60%);
+   
+    75% {
+        transform: translateX(-75%); /* Chegou ao quarto slide */
     }
-
+    94% {
+        transform: translateX(-75%); /* Mantém no quarto slide */
+    }
+  
+    97% {
+        transform: translateX(0); /* Retorno ao início */
+    }
     100% {
-        transform: translateX(-80%);
+        transform: translateX(0); /* Permanece no início */
     }
+
 }
 
 /* Seção de Vídeos */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
 .video-section {
     padding: 60px 20px;
     background-image:linear-gradient(to bottom, #f9f5f0 , #fff);
@@ -85,6 +99,7 @@
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 75%;
+    pointer-events: none;
 }
 
 .video-item video {
@@ -93,6 +108,4 @@
     object-fit: cover;
     height: auto;
 }
-#video4{
-    height: 22rem;
-}
+/* videos.css */   
